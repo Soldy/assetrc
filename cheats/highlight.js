@@ -1,6 +1,6 @@
 
-const highLigthBase = function(){ // not a miss spell  
-    this.highlight = function(list, element, before, after){
+const highLightBase = function(){ // not a miss spell  
+    this.doIt = function(list, element, before, after){
         list = listMidifier(list);
         highligth(list, element, before, after);
     };
@@ -11,7 +11,7 @@ const highLigthBase = function(){ // not a miss spell
             out.push(' '+i+' ');
         }
     };
-    const highligth = function(list, element, before, after){
+    const highlight = function(list, element, before, after){
         const html = element.innerHTML;
         element.innerHTML =  html.replace( // the replace is fast but noit effective so 
             (new RegExp(list.join('|'), 'gi')), 
@@ -23,4 +23,4 @@ const highLigthBase = function(){ // not a miss spell
 };
 
 
-const highLigth = new highLigthBase();
+const highLight = new highLightBase();
