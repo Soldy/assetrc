@@ -2,7 +2,7 @@
 const highLightBase = function(){ // not a miss spell  
     this.doIt = function(list, element, before, after){
         list = listMidifier(list);
-        highligth(list, element, before, after);
+        highlight(list, element, before, after);
     };
     const listMidifier = function(list){ // have to rethink need more rule
         let out = [];
