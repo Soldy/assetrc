@@ -10,6 +10,7 @@ const highLightBase = function(){ // not a miss spell
             out.push(' '+i+',');
             out.push(' '+i+' ');
         }
+        return out;
     };
     const highlight = function(list, element, before, after){
         const html = element.innerHTML;
